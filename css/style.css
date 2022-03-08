@@ -125,6 +125,7 @@ img {
 input {
   background-color: beige;
   width: 40%;
-  min-width: 400px;;
-  margin: 0 auto;
+  min-width: 200px;
+  padding: .5rem;
+  margin: 1rem auto;
 }
