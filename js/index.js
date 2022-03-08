@@ -9,10 +9,11 @@
 // https://api.nasa.gov/planetary/apod
 const apodBtn = document.querySelector('.btn');
 // const neoBtn = document.querySelector('.btn-neo');
-
+const loader = document.querySelector('#loader');
 
 
 async function getApod() {
+  loader.style.visibility = "visible";
   const date = document.querySelector('input').value;
   const url = `https://api.nasa.gov/planetary/apod?api_key=cYHfe95lZaojXTRkycOfu3dCqkMhPyuKYr2LhMYa&date=${date}`
   const response = await fetch(url);
@@ -25,7 +26,7 @@ async function getApod() {
   document.querySelector('img').src = data.hdurl;
   document.querySelector('h3').innerText = data.explanation;
   date.innerText ="";
-
+  loader.style.display = "none";
 
 }
 

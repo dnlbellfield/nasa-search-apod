@@ -18,14 +18,21 @@
 	<body>
     <div class="container">
       <h1>Astronomy Picture of the Day</h1>
-      <h2> Enter a date (YYYY-MM-DD)<br> From 1996 to today  <br>
+      <h2> Pick a date  <br>
  </h2>
-      <input type="text" placeholder="YYYY-MM-DD">
+      <input type="date" placeholder="YYYY-MM-DD"
+      min="1996-01-01" max="2023-01-01">
       <button class="btn"> Search</button>
+
+
       <!-- <button class="btn-neo"> Get Neo</button> -->
 
       <div class="container-img">
         <img src="" alt="">
+      </div>
+      <div id="loader"> 
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
       </div>
       <h3></h3>
 
