@@ -46,5 +46,3 @@ apodBtn.addEventListener('click',getApod);
 // neoBtn.addEventListener('click',getNeo);
 
 
-const date = new Date();
-console.log(date);
