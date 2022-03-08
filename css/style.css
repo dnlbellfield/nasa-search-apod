@@ -1,0 +1,129 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: beige;
+  font-family: 'Rubik', sans-serif;
+  background-color: rgb(21, 20, 20);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.container {
+  font: white;
+
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  /* border: 3px solid red; */
+  margin: 0 auto;
+  margin-top: 4rem;
+
+}
+
+
+
+h1 {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 3rem;;
+}
+
+h2 {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 2rem;;
+}
+
+
+
+h3 {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem;
+  /* min-width: 70%;
+  max-width: 50%; */
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 1200px;
+  height: auto;
+  /* background-color: yellow; */
+  margin: 2rem auto;
+}
+
+.btn {
+  align-self: center;
+  min-width: 100px;
+  /* border: 3px solid red; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: beige;
+
+
+}
+
+.btn-neo {
+  align-self: center;
+  min-width: 100px;
+  /* border: 3px solid red; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 100px;
+
+}
+input {
+  background-color: beige;
+  width: 40%;
+  min-width: 400px;;
+  margin: 0 auto;
+}
